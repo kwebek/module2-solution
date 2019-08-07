@@ -138,3 +138,8 @@
     width: 100%;
   }
 }
+
+.item {
+  display: inline-block;
+  box-sizing: border-box;
+}
