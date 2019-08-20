@@ -1,16 +1,79 @@
 /* Simple Responsive Framework. */
+
+* {
+  box-sizing: border-box;
+}
+
+
+body{
+  margin: 0;
+  padding: 0;
+}
+
 .row {
   width: 100%;
 }
+
+
+h1, h2, h3, h4, h5{
+  text-align:center;
+  margin-bottom: 15px;
+}
+
+
+.item {
+width: 100%;
+}
+
+.item p {
+height: 250px;
+width: 100%;
+margin-bottom: 15px;
+position: relative;
+border: 2px solid #3F0C1F;
+overflow: hidden;
+padding:40px 10px 10px;
+}
+
+.title span{
+position: absolute;
+top: 18px;
+right: 17px;
+width: 30%;
+text-align: center;
+font-size: 1.6em;
+/* text-transform: uppercase; */
+font-weight: bold;
+border-bottom: 2px solid;
+border-left: 2px solid;
+}
+
+.chicken span{
+background-color: #D29595;
+}
+
+.beef span{
+background-color: #C14543;
+color:#fff;
+border-color: #000;
+}
+
+.sushi span{
+background-color: #E4D097;
+}
+
+
 
 
 
 /********** DESKTOP VERSION **********/
 @media (min-width: 992px) {
   .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
-    float: left;
-    border: 1px solid green;
-  }
+    padding-right: 15px;
+    padding-left: 15px;
+    float:left;
+    position: relative;
+      }
   .col-md-1 {
     width: 8.33%;
   }
@@ -23,7 +86,8 @@
   .col-md-4 {
     width: 33.33%;
   }
-  .col-md-5 {
+
+ .col-md-5 {
     width: 41.66%;
   }
   .col-md-6 {
@@ -53,8 +117,10 @@
 /********** TABLET VERSION **********/
 @media (min-width: 768px) and (max-width: 991px) {
   .col-td-1, .col-td-2, .col-td-3, .col-td-4, .col-td-5, .col-td-6, .col-td-7, .col-td-8, .col-td-9, .col-td-10, .col-td-11, .col-td-12 {
-    float: left;
-    border: 1px solid green;
+     padding-right: 15px;
+    padding-left: 15px;
+    float:left;
+    position: relative;
   }
   .col-td-1 {
     width: 8.33%;
@@ -74,6 +140,11 @@
   .col-td-6 {
     width: 50%;
   }
+
+   .col-td-6:nth-child(3) {
+    width: 100%;
+  }
+
   .col-td-7 {
     width: 58.33%;
   }
@@ -98,8 +169,10 @@
 /********** MOBILE VERSION **********/
 @media (max-width: 767px) {
   .col-sd-1, .col-sd-2, .col-sd-3, .col-sd-4, .col-sd-5, .col-sd-6, .col-sd-7, .col-sd-8, .col-sd-9, .col-sd-10, .col-sd-11, .col-sd-12 {
-    float: left;
-    border: 1px solid green;
+    padding-right: 15px;
+    padding-left: 15px;
+    float:left;
+    position: relative;
   }
   .col-sd-1 {
     width: 8.33%;
@@ -139,7 +212,4 @@
   }
 }
 
-.item {
-  display: inline-block;
-  box-sizing: border-box;
-}
+
